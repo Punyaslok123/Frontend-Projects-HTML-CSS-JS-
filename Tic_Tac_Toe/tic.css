@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #678976;
+    text-align: center;
+}
+
+
+.container{
+    height: 74vmin;
+    padding: 10px;
+    
+}
+
+.container h1{
+    color:white;
+}
+
+.game{
+    margin:auto;
+    margin-top: 3%;
+    height:69vmin;
+    width:64vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+     column-gap:13px;
+    row-gap: 10px; 
+  
+
+}
+
+.box{
+    background-color: rgb(229, 225, 225);
+    border:none;
+    height:21vmin;
+    width:19vmin;
+    border-radius: 8px;
+    color:rgb(29, 28, 28);
+    font-size: xx-large;
+}
+
+.reset{
+    margin-top: 12px;
+    background-color: #03160b;
+    color:white;
+    border:none;
+    height:30px;
+    width:100px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+.new_game{
+    margin-top: 12px;
+    background-color: #03160b;
+    color:white;
+    border:none;
+    height:30px;
+    width:100px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+
+.msg-container{
+    /* background-color: red; */
+    height: 4vmin;
+    text-align: center;
+    padding-top:2vmin;
+    color:white;
+}
+
+.hide{
+    display: none;
+}
+
+
+ /* i want below style will apply after the winner founding ,not generally */
+.foot{
+     margin-top: 240px;
+     font-size: x-large;
+     padding: 20px;
+
+}
+
+
+.rstb{
+    margin-top: 50px;
+}
+
+.newb{
+    margin-top: 50px;
+}
