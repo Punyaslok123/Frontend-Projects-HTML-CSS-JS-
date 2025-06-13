@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background: linear-gradient(rgb(255, 170, 0), rgb(220, 171, 171));
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 8vh 0 5vh 0; /* top and bottom space */
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+
+
+
+
+
+.container {
+    background: linear-gradient(rgb(9, 9, 74), rgb(241, 186, 186));
+    color: white;
+    width: 35vw;
+    min-width: 280px;
+    max-width: 400px;
+    padding: 20px 16px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 2px;
+  }
+  
+
+
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+  }
+  
+  #next {
+    background-color: #281367;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 160px;
+    transition: transform 0.2s ease;
+  }
+
+#next:hover {
+    transform: scale(1.06);
+}
+
+  
+
+header{
+    height: 17%;
+    width: 90%;
+    /* background-color: aqua; */
+    margin-left:5%;
+    text-align: left;
+    margin-top:3px;
+    border-bottom: 1px solid rgb(241, 239, 239);
+    font-family:Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+
+header h1{
+    margin-bottom: 10px;
+}
+
+
+main h3{
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 3%;
+   display: flex;
+   margin-bottom: 9px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+
+.options{
+    height:36vh;
+    margin-left: 3%;
+
+    text-align: center;
+
+    /* background-color: red; */
+}
+.option{
+    height:18%;
+    width:90%;
+    border: 1px solid black;
+    margin-bottom:3%;
+   text-align: left;
+   padding-top: 1px;
+   padding-left: 8px;
+   border-radius: 5px;
+
+}
+
+.option:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 85vw;
+    }
+
+    #next {
+        max-width: 100%;
+        font-size: 15px;
+    }
+}
+
+/* 
+footer{
+   
+    height:6vh;
+    width:90%; */
+    /* background-color: aqua; */
+    /* margin-left: 5%;
+    display: flex;
+    justify-content: center;
+      align-items: center;
+} */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* #next{
+    background-color: #281367;
+    height:90%;
+    width:16%;
+    border: none;
+    border-radius: 3px;
+    color:white;
+    width:80px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 3px; */
+    /* display: none; */
+/* } */
+
+#next {
+    background-color: #281367;
+    height: 40px;
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+
+#next:hover{
+     transform: scale(1.06);
+}
+
+
+/* this class are belongs to the javascript */
+.btn {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+
+    margin-left: 4%;
+    width:90%;
+    text-align: left;
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+
+
+/* add the background color in the correct or not correct option  */
+
+.correct{
+    background: #9aeabc;
+}
+
+.incorrect{
+    background: #ff9393;
+}
