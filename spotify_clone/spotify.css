@@ -1,0 +1,169 @@
+body{
+    background-color: antiquewhite;
+  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    height:65px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+nav ul li{
+    padding:0 12px;
+}
+
+.brand img{
+   
+    background-size: cover;
+    width: 44px;
+    padding-right:8px;
+
+
+}
+
+/* done the navigation var */
+
+.container{
+    min-height: 76vh;
+    background-color: black;
+    margin: 15px auto;
+    width:71%;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 14px;
+    border-radius: 12px;
+    background-image:url('https://images.pexels.com/photos/3721941/pexels-photo-3721941.jpeg?auto=compress&cs=tinysrgb&w=400');
+    display: flex;
+    background-size: cover;
+
+}
+
+.bottom{
+    background-color: black;
+
+    height:100px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+   
+    
+}
+
+#myProgressBar{
+    width:80vw;
+   
+}
+.icons{
+    margin-top: 5px;
+    /* padding-left: 10px; */
+}
+.icons i{
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+/* .container styling  */
+
+.songItem{
+    height:30px;
+    background-color: white;
+    color:black;
+    display: flex;
+    justify-content:flex-start;
+    gap:10px;
+    align-items: center;
+    border-radius: 30px;
+    font-size: smaller;
+    font-weight: 100;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:10px;
+}
+
+.songItem img{
+    height: 22px;
+    width:22px;
+    background-size: cover;
+
+    border-radius: 50%;
+    text-align: center;
+   
+    margin-left:7%;
+}
+
+
+.songName{
+    margin-left:10%;
+    width:35%;
+}
+
+.songlistplay{
+    margin-left: 5%;
+}
+
+.songlistplay span{
+    padding:4px;
+}
+
+.songlist h1{
+    font-size: large;
+}
+
+.songlistplay i{
+   cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 64px;
+}
+
+.songInfo img{
+       height: 10px;
+       font-size: medium;
+       opacity: 0;
+       transition: opacity 0.4s ease-in;
+}
+
+.songInfo{
+    position: absolute;
+    left:10vw;
+    
+}
+
+#myProgressBar{
+    cursor: pointer;
+}
+
+#masterSongName{
+      font-size: small;
+      margin-left: 0;
+
+
+}
+
+
