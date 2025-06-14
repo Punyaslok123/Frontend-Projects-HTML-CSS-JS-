@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+
+}
+.container{
+    min-height: 100vh;
+    width:100vw;
+    background: linear-gradient(165deg,rgb(219, 212, 121),rgb(156, 238, 147));
+    display: flex;
+    padding-top: 50px;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.todo_container{
+        min-height:21vh;
+        min-width:27vw;
+        background-color: white;
+        border-radius: 5px;
+        overflow: hidden;
+        overflow-y: auto;
+        max-height: 70vh;
+        background: linear-gradient(rgb(24, 6, 76),rgb(122, 188, 208));
+        padding-top:7px;
+        color:white;
+        
+}
+
+.header{
+    display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-left: 19px;
+  
+
+
+}
+
+.header img{
+    height: 30px;
+    background-size: cover;
+    margin-left: 5px;
+    
+
+}
+
+.header h1{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: x-large;
+      color:rgb(247, 247, 250);
+}
+
+
+.search{
+      height:80px;
+      padding-top: 10px;
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 14px;
+}
+
+.search input{
+    height:57%;
+    width:76%;
+    border-radius: 24px;
+   background-color:rgb(212, 210, 210) ;
+   border: 0px solid grey;
+   padding-left: 20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   outline: none;
+ 
+}
+
+.search button{
+      background-color: rgb(241, 86, 86);
+      border: none;
+      height:57%;
+      width:17%;
+      border-radius: 7px;
+      color:white;
+      font-size: xx-large;
+      font-weight: 700;
+      margin-left: 6px;
+
+
+}
+
+.search button:hover{
+    transform: scale(1.05);
+}
+
+
+.list_items{
+    margin-left: 24px;
+
+}
+
+.list_items li{
+        margin-bottom:26px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        list-style: none;
+        position: relative;
+}
+
+
+.list_items li::before {
+    content: "";
+    display: inline-block;
+    width: 16px;  /* or the size of your image */
+    height: 16px;
+    margin-right: 8px;
+    background: url("assets/unchecked.png") ;
+    background-size: contain;
+}
+
+
+.list_items .checked{
+    text-decoration: line-through;
+}
+
+.list_items li.checked::before {
+    background: url("assets/checked.png");
+    background-size: cover;
+}
+
+
+/* after js  */
+
+/* styling the cross  */
+
+.listcontainer{
+    position: relative;
+}
+ul li span{
+    position: absolute;
+    left:79%;
+    height: 25px;
+    width:25px;
+    text-align: center;
+    padding-top: 1px;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: rgb(227, 224, 224);
+}
