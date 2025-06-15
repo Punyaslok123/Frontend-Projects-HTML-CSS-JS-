@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+      overflow: hidden;
+}
+
+.gameContainer{
+      background-image: url('assets/bg.png');
+      background-repeat: no-repeat;
+      width:100vw;
+      height:100vh;
+      background-size: 100vw 100vh;
+  
+
+}
+
+.dino{
+    background-image: url('assets/dino.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 114px;
+    width:233px;
+    position: absolute;
+    bottom: 0;
+    left:200px;
+  
+
+}
+
+.obstacle{
+    background-image: url('assets/dragon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:114px;
+    width:190px;
+    position: absolute;
+    left:75vw;
+    bottom: 0;
+
+}
+
+/* by default gameover visibility is hidden  */
+
+/* positions its center */
+.gameOver{
+    position: absolute;
+    /* visibility: hidden; */
+    top:4vh;
+    width:60vh;
+    text-align: center;
+    
+     font-size:32px;
+    font-weight: 800;
+    color:red;
+    font-family: sans-serif;
+    left:35vw;
+
+}
+
+#scoreCont{
+     position: absolute;
+     top:3vh;
+    border: 2px solid gray;
+     height: 37px;
+     width:180px;
+     padding: 8px;
+ 
+     left:86vw;
+     color:rgb(244, 244, 245);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+     
+}
+
+.start{
+    border: 2px solid black;
+    height:35px;
+    width:60px;
+    position: absolute;
+    top:2.7vh;
+    left:3vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:3px;
+    padding-left: 8px;
+    color: aliceblue;
+    font-weight: 800;
+    cursor: pointer;
+
+}
+
+/* for dino movement */
+
+.animateDino{
+      animation: dino 0.7s linear ;
+}
+
+@keyframes dino{
+     0%{
+        bottom: 0;
+     }
+     50%{
+      bottom: 422px;
+     }
+     100%{
+        bottom: 0;
+     }
+
+}
+
+/* for .obstacle */
+
+.obstacleAni{
+    animation: obstacleAni 2s linear infinite;
+}
+
+
+@keyframes obstacleAni{
+
+    0%{
+      left:100vw;
+    }
+    100%{
+
+    left:-10vw;
+    }
+
+}
