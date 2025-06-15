@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+     /* border: 1px solid red; */
+    height:68vh;
+    width:68vh;
+    background-image: url('https://www.shutterstock.com/image-vector/blank-clock-face-mock-no-600nw-2509780169.jpg');
+
+    background-size: 100%;
+    
+    margin: auto;
+    margin-top: 7%;
+    position: relative;
+
+    
+}
+
+
+#hour{
+      background-color: rgb(14, 14, 14);
+        height: 24%;
+        width: 1.8%;
+        border-radius: 20%;
+        position: absolute;
+        left: 49.1%;
+        top: 25.7%;
+        opacity: 0.8;
+        /* display: none; */
+
+        transform-origin: bottom;
+}
+
+#minute{
+
+    height: 27%;
+    width: 1.5%;
+    background-color: black;
+    border-radius: 25%;
+
+    position: absolute;
+    left: 49.3%;
+    top: 22.5%;
+    opacity: 0.8;
+   
+    /* display: none; */
+
+    transform-origin: bottom;
+}
+
+#second{
+    border: 2px solid black;
+    height: 29%;
+    width: 0.1%;
+    border-radius: 20%;
+    position: absolute;
+    left: 49.8%;
+    top: 20.5%;
+    opacity:0.8;
+    /* display: none; */
+
+    transform-origin: bottom;
+    
+}
+
+.name{
+    margin-top: 2%;
+    margin-left: 10%;
+    font-style: italic;
+    font-weight: 700;
+    color:rgb(100, 213, 213)
+}
+
+/*  transform-origin is used to tell from which portion to rotate
+
+position - absolute is used to move left , right , bottom ,top of a container with respect to its parent, to do that parent need to make relative  */
