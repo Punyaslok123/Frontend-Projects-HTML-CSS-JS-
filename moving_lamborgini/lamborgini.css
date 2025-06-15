@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+
+.sky{
+    height:100vh;
+    width:1000vw;
+    background-image: url(assets/background.jpg);
+    background-repeat: no-repeat;
+    position:absolute;
+}
+
+.trees{
+      
+      height: 75vh;
+      width:100vw;
+      background-image: url('assets/tree.jpg.png');
+      background-size: cover;
+
+     
+      position: absolute;
+      animation: backgroundScroll 3s linear infinite;
+    
+    
+}
+
+.track{
+    height:34vh;
+    width:1000vw;
+    background-image: url('assets/track.png');
+    position: absolute;
+    top:69vh;
+    background-image: cover;
+    animation: trackRotation linear 2s infinite;
+}
+
+.car{
+    height:100px;
+    width:450px;
+    background-image: url('assets/car_body.png');
+    background-size: cover;
+    position: absolute;
+    top:350px;
+    left:200px;
+    animation: shake linear 0.6s infinite;
+}
+
+.wheel1 img{
+    height:90px;
+    background-size: cover;
+    position: absolute;
+    left:49px;
+    top:43px;
+    animation: wheelRotation linear .3s infinite;
+}
+
+
+.wheel2 img{
+    height:98px;
+    background-size: cover;
+    position: absolute;
+    left:278px;
+    top:44px;
+    animation: wheelRotation linear .3s infinite;
+}
+
+
+
+
+/* // while rotation -- */   
+@keyframes wheelRotation{
+     
+    100%{
+        transform:rotate(360deg);
+    }
+}
+/* 
+// animation to moving track in left direction */
+@keyframes trackRotation{
+      100%{
+        transform: translateX(-206vw);
+      }
+}
+
+
+/* animation on car  */
+
+@keyframes shake{
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+
+/* for .trees */
+
+@keyframes backgroundScroll {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -100vw 0;
+    }
+}
+
+/* 
+responsivenes */
+
+
+
+
+
+
+
