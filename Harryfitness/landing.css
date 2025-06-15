@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Cinzel:wght@400..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+.navigation{
+    margin:auto;
+     height:4vw;
+     display: flex;
+     align-items: center;
+     width:80%;
+     justify-content: space-between;
+     border-bottom: 1px solid rgb(29, 28, 78);
+}
+
+
+.rightnav ul{
+      display: flex;
+
+}
+
+.rightnav ul li{
+    margin-right:32px;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(94, 94, 251);
+    font-size: 16px;
+}
+
+.rightnav ul li:hover{
+     color:black;
+     cursor: pointer;
+}
+
+.rightnav ul li button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.leftnav{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    color:red;
+    font-weight: bold;
+}
+
+.rightnav ul li button{
+     border: none;
+     background-color: red;
+     color:white;
+     height:26px;
+     border-radius: 4px;
+     width:70px;
+
+}
+
+.main{
+    min-height: 100vh;
+}
+
+
+.up{
+    display: flex;
+}
+
+
+.rightup img{
+      height:70vw;
+      width:32vw;
+      background-size: cover;
+
+}
+
+.leftup{
+ 
+    width:70vw;
+    padding-top:13%;
+    padding-left:10%;
+   
+    
+}
+
+.leftup h1{
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 200;
+    margin-left: 8%;
+}
+
+#hspan{
+    display: block;
+    margin-left: 30%;
+
+}
+
+.leftup p{
+    width:44vw;
+    margin-top: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(110, 110, 244);
+    margin-left:6%;
+}
+
+#firstspan{
+    margin-left: 20px;
+}
+
+.leftbottom{
+    width:78vw;
+   padding-bottom: 6%;
+   padding-left: 15%;
+   padding-top:2%;
+   
+   border-bottom:1px solid black;
+}
+.subleftbottom1{
+    color:blueviolet;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 12px;
+  
+}
+
+.subleftbottom2{
+    margin-top: 1%;
+    padding-left: 7%;
+  
+
+}
+
+.subleftbottom2 button{
+    background-color: rgb(216, 72, 24);
+    color:white;
+    width:84px;
+    height:30px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+   
+}
+
+.subleftbottom2 button:hover{
+     transform: scale(1.1);
+     cursor: pointer;
+}
+
+.rightup img{
+    height: 130vh;
+    width:27vw;
+}
+
+.middle{
+      width:81vw;
+      margin: auto;
+      border-bottom: 1px solid black;
+}
+
+.middle h2{
+    margin-left: 42%;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 2%;
+}
+
+.middlediv1 {
+    width:70%;
+    margin: 20px auto;
+    color:rgb(156, 57, 249);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+.cardContainer{
+    margin-bottom: 7%;
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    height:270px;
+    width:230px;
+    border:1px solid black;
+    text-align: center;
+    border:2px solid black;
+    border-radius:10px;
+   
+}
+
+.card h1{
+    margin-top:10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+
+}
+
+
+
+.card h3{
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card p{
+    margin-top:11px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card button{
+    background-color: rgb(240, 42, 42);
+    border: none;
+    height:30px;
+    margin-top: 10px;
+    width:90px;
+    color:white;
+    border-radius: 4px;
+
+}
+
+.card button:hover{
+      cursor: pointer;
+}
+
+
+.tableContainer{
+    margin:100px auto;
+    height: 500px;
+    width:83%;
+    margin-bottom: 70px;
+    
+}
+
+.col1{
+    width:10%;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+    
+}
+
+.col2{
+    width:10%;
+    text-align: center;
+    font-size: small;
+    color:rgb(147, 116, 176);
+}
+.col3{
+    width:10%;
+    font-size: small;
+    color:rgb(147, 116, 176);
+}
+.col4{
+    width:10%;
+    text-align: center;
+    font-size: small;
+    color:rgb(147, 116, 176);
+}
+
+
+
+
+.tablerow{
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+
+
+#row1 .col2 {
+    font-size: medium;
+    font-weight: 500;
+    color:black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#row1 .col3 {
+    font-size: medium;
+    font-weight: 500;
+    color:black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#row1 .col4 {
+    font-size: medium;
+    font-weight: 500;
+    color:black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.bottomContainer h1{
+    margin:50px auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.footerContainer{
+      height: 70px;
+      border-top: 1px solid black;
+      width:82%;
+      margin:auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+}
+
+.footerContainer p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.card:hover{
+    background-color: rgb(240, 238, 238);
+}
+
+.card button:hover{
+    transform: scale(1.1);
+}
+
+#id1{
+     padding: 20px;
+}
+
+.sp{
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#s1{
+    padding-left: 34px;
+}
+
+#s3{
+    padding-left: 39px;
+    padding-right: 49px;
+}
+
+#s4{
+     padding-left: 66px;  
+}
+
+#s5{
+    padding-left: 74px;
+}
+
+
+
+
+
+/* Responsive scaling for tablets */
+/* --------- GLOBAL RESPONSIVE FIX ----------- */
+.page-wrapper {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  
+  /* ---------- TABLET VIEW ---------- */
+  @media (max-width: 1024px) {
+    .navigation {
+      flex-direction: column;
+      height: auto;
+      gap: 10px;
+    }
+  
+    .rightnav ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .rightnav ul li {
+      margin: 10px 0;
+    }
+  
+    .up {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .leftup {
+      width: 90vw;
+      padding: 5% 5%;
+    }
+  
+    .rightup img {
+      width: 90vw;
+      height: auto;
+    }
+  
+    .middle {
+      width: 90vw;
+    }
+  
+    .cardContainer {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  
+    .tableContainer {
+      width: 100%;
+      overflow-x: auto;
+    }
+  
+    .tablerow {
+      min-width: 700px;
+    }
+  }
+  
+  /* ---------- MOBILE VIEW ---------- */
+  @media (max-width: 600px) {
+    .leftup h1 {
+      font-size: 6vw;
+    }
+  
+    .leftup p {
+      width: 90%;
+      font-size: 4vw;
+    }
+  
+    .leftbottom {
+      padding-left: 5%;
+    }
+  
+    .subleftbottom1 {
+      font-size: 5vw;
+    }
+  
+    .subleftbottom2 button {
+      width: 90px;
+      height: 32px;
+      margin: 10px 5px;
+    }
+  
+    .footerContainer {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+
